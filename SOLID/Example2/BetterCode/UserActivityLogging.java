@@ -1,4 +1,4 @@
-package SOLID.Example 2.BetterCode;
+package BetterCode;
 
 public class UserActivityLogging {
     public void logUserActivity(User user) {
