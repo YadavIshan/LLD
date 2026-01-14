@@ -1,4 +1,4 @@
-package ProblematicCode;
+package SOLID.SRP.Example1.ProblematicCode;
 
 //Problem with this class is that it is doing too many things
 //Because the below class is trying to do to many things thats why we need to change this class

@@ -1,4 +1,5 @@
-package BetterCode;
+package SOLID.SRP.Example1.BetterCode;
+
 //Now whatever the reason is , we are only considering about the change related to employee performance report
 public class EmployeePerformanceReportaGenerator {
     public void generatePerformanceReport(Employee employee) {

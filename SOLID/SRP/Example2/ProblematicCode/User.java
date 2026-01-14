@@ -1,4 +1,4 @@
-package BetterCode;
+package SOLID.SRP.Example2.ProblematicCode;
 
 public class User {
     public Integer age;

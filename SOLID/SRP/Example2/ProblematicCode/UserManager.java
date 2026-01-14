@@ -1,4 +1,4 @@
-package BetterCode;
+package SOLID.SRP.Example2.ProblematicCode;
 
 public class UserManager {
     public void addUser(User user) {
@@ -21,5 +21,15 @@ public class UserManager {
 
     public void fetchUser(User user) {
         System.out.println("Fetching user");
+    }
+
+    // Currently UserManager class was focused on one Responsibility which was
+    // managing user
+    // But now we need to add new functionality to log user activity , which breaks
+    // the single responsibility principle
+    // So we need to separate this functionality into different classes
+
+    public void logUserActivity(User user) {
+        System.out.println("Logging user activity");
     }
 }

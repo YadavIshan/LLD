@@ -1,4 +1,4 @@
-package BetterCode;
+package SOLID.SRP.Example1.BetterCode;
 
 public class Employee {
     private String employeeId;
@@ -10,7 +10,7 @@ public class Employee {
         this.name = name;
         this.email = email;
     }
-    
+
     public String getEmployeeId() {
         return employeeId;
     }
