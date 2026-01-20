@@ -1,5 +1,5 @@
 package Principle.DRY.ProblematicCode;
-
+//DRY Principle = Doing repetitive and similar piece of work again and again
 public class StudentService {
     public void addStudent(String name, int age) {
         if (name == null || name.isEmpty()) {
