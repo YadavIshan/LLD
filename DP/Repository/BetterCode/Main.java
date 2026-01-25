@@ -1,4 +1,7 @@
 package DP.Repository.BetterCode;
+import java.util.List;
+
+import DP.Iterator.UserIterator;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,12 +9,12 @@ public class Main {
 
         // Client just specifies the batch size (limit)
         // Offset management is completely hidden!
-        Iterator<List<String>> iterator = new UserIterator(sqlRepo, 10);
+        UserIterator iterator = new UserIterator(sqlRepo, 10);
 
         while (iterator.hasNext()) {
             System.out.println("Fetching next page...");
-            List<String> users = iterator.next();
-            System.out.println("Processing " + users.size() + " users: " + users);
+            String user = iterator.next();
+            System.out.println("Processing " + user);
         }
     }
 }

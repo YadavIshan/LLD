@@ -6,7 +6,7 @@ import java.util.List;
 import DP.Builder.User;
 import DP.Repository.BetterCode.UserRepository;
 
-public class UserIterator implements Iterator<User>{
+public class UserIterator implements Iterator<String>{
 
     private UserRepository userRepository;
     private int limit = 1 ;
@@ -24,10 +24,10 @@ public class UserIterator implements Iterator<User>{
     }
 
     @Override
-    public User next() {
+    public String next() {
         List<String> next = current;
         offset += limit;
         current = userRepository.getUsers(limit , offset);
-        return next;
+        return next.get(0);
     }
 }
