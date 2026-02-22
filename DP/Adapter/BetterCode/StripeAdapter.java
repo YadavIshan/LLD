@@ -3,11 +3,11 @@ package DP.Adapter.BetterCode;
 import DP.Adapter.ProblematicCode.PaymentProcessor;
 import DP.Adapter.ProblematicCode.StripeGateway;
 
-public class StriperAdapter implements PaymentProcessor {
+public class StripeAdapter implements PaymentProcessor {
 
     private StripeGateway stripeGateway;
 
-    public StriperAdapter(StripeGateway stripeGateway) {
+    public StripeAdapter(StripeGateway stripeGateway) {
         this.stripeGateway = stripeGateway;
     }
 

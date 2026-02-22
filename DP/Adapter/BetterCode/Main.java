@@ -16,7 +16,7 @@ public class Main {
         StripeGateway stripe = new StripeGateway();
 
         // 3. Using the Adapter to make it compatible
-        PaymentProcessor stripeAdapter = new StriperAdapter(stripe);
+        PaymentProcessor stripeAdapter = new StripeAdapter(stripe);
 
         stripeAdapter.pay(200);
     }
